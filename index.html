@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Unreliable</title>
-<style>
-html{
-	background:url('photo.jpg') no-repeat center center fixed;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o- background-size: cover;
-	background-size: cover;	
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Image</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Optional: background color */
+        }
 
-body{
-	color :#FFFFFF
-}
-
-</style>
+        img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain; /* Ensures the image maintains aspect ratio */
+        }
+    </style>
 </head>
-
 <body>
-<p style="text-align:center" style="font-family: verdana"> Unreliable!</p>
+    <img src="photo.jpg" alt="Centered Image">
 </body>
-
 </html>
